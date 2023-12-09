@@ -1,0 +1,42 @@
+[
+    {
+        "date": "16/06/2023",
+        "venue": "Teatro Vittoria Manzoni presents",
+        "performance": "Scriabin etudes selections from Op.42, Nos2-5",
+        "address": "via Vittoria Manzoni",
+        "city": "Massarosa",
+        "country": "Italy",
+        "image": "../images/massarosa2023.png",
+        "embedcode": "https://www.youtube.com/embed/b2YnFdVuMxo"
+    },
+    {
+        "date": "16/06/2023",
+        "venue": "Teatro Vittoria Manzoni presents",
+        "performance": "Debussy Estampes L.100",
+        "address": "via Vittoria Manzoni",
+        "city": "Massarosa",
+        "country": "Italy",
+        "image": "../images/massarosa2023.png",
+        "embedcode": "https://www.youtube.com/embed/-9jM2s4f7zM"
+    },
+    {
+        "date": "16/06/2023",
+        "venue": "Teatro Vittoria Manzoni presents",
+        "performance": "Beethoven Piano Sonata No18 in E-Flat Major, Op.31 No3",
+        "address": "via Vittoria Manzoni",
+        "city": "Massarosa",
+        "country": "Italy",
+        "image": "../images/massarosa2023.png",
+        "embedcode": "https://www.youtube.com/embed/ilkT4PAXzk4"
+    },
+    {
+        "date": "31/01/2023",
+        "venue": "presents",
+        "performance": "J.S. Bach Art of Fugue, Contrapunctus IX, Canon I",
+        "address": "",
+        "city": "",
+        "country": "United Kingdom",
+        "image": "../images/JSBach2.jpeg",
+        "embedcode": "https://www.youtube.com/embed/dGo55av3uDo"
+    }
+]

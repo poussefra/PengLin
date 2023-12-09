@@ -1,0 +1,720 @@
+/* COLOR PALETTE
+
+Ecru white    #F3F3E3
+Off-white     #f6f6f6
+
+Gondola       #2D1620
+Oriental Pink #C39986
+Jelly Bean    #298894
+Blue Lagoon   #05788C
+
+contact color palette
+Woodland      #474C27
+Brandy        #E0C5A5
+Ship Cove     #6997C0
+Wild Willow   #9EC56D
+
+*/
+
+/* GLOBAL STYLES
+----------------------------------------------------------------*/
+/* font-family: 'Cinzel', serif;
+/* font-family: 'Noto Serif SC', serif;
+/* font-family: 'Noto Serif TC', serif;
+/* font-family: 'Roboto', sans-serif;
+
+
+/* HOME
+----------------------------------------------------------------*/
+@media screen and (min-width:1270px) {
+    .home {
+    background: url('../../images/DSC_1327.jpg') no-repeat;
+    /* make the background size relative to the total size of the viewport and allow to stretch in the vertical direction */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    animation: changeBackground 24s infinite alternate;
+    background-position: centre right;
+    }
+}
+
+@media screen and (max-width:1269px) and (min-width:840px){
+    .home {
+    background: url('../../images/DSC_1327.jpg') no-repeat;
+    /* make the background size relative to the total size of the viewport and allow to stretch in the vertical direction */
+    background-size: 1269px 1191px;
+    /* min-height: 1191px; */
+    display: flex;
+    flex-direction: column;
+    background-position: top;
+    }
+}
+@media screen and (max-width:839px) and (min-width:431px){
+    .home {
+    background: url('../../images/DSC_1327_Small.jpg') no-repeat;
+    /* make the background size relative to the total size of the viewport and allow to stretch in the vertical direction */
+    background-size: 839px 1191px;
+    /* min-height: 1191px; */
+    display: flex;
+    flex-direction: column;
+    background-position: top;
+    }
+}
+@media screen and (max-width:430px) {
+    .home {
+    background: url('../../images/DSC_1327_Small.jpg') no-repeat;
+    /* make the background size relative to the total size of the viewport and allow to stretch in the vertical direction */
+    background-size: cover;
+    min-height: 932px;
+    display: flex;
+    flex-direction: column;
+    background-position: top;
+    }
+}
+
+.mainFlexContainer{
+    display: inline-block;
+}
+
+.transparentImage{
+    opacity: 0.2;
+  }
+
+.home-flex-box{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); grid-template-columns: repeat(3, 1fr); /* Create a grid with 3 columns */
+    gap: 20px; /* Set the gap between grid items */
+  }
+
+.grid-container h1{
+    font-family: 'Noto Serif SC', serif;
+    font-size: 7rem; /* 70px */
+    font-weight: 400;
+    text-align: end;
+    color: #C39986;
+}
+
+@keyframes changeBackground {
+    0%, 100% {
+      background-image: url('../../images/DSC_1327.jpg');
+      background-size: 2500px; /*cover;*/
+    }
+    50% {
+        background-image: url('../../images/IMG_3202.jpg');
+        background-size: 2500px; /*cover;*/
+    }
+  }
+
+@media screen and (max-width:1225px) {
+    .grid-container img{
+        width: 300px;
+        height:auto;
+    }
+}
+
+@media screen and (max-width:875px) {
+    .navigation p{
+        font-size: 1rem;
+        text-align: left;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* Create a grid with 3 columns */
+    }
+    .grid-container img{
+        display: none;
+    }
+    .grid-container h1{
+        text-align: center;
+    }
+}
+
+/* NAVIGATION MENU
+----------------------------------------------------------------*/
+.navigation {
+    /* remove the bullet from the list items considering teh creation of the inline-block */ 
+    list-style-type: none;
+    /* align the menu to the right */ 
+    display: flex;
+    justify-content: flex-end;
+    /* position: fixed; */
+    top: 5px;
+    right: 20px;
+    }
+
+.navigation li {
+    /* align all list items on a line by converting the list items into a inline block display*/ 
+    display: inline-block;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.5rem; /* 15px */
+    line-height: 1.4; /*increase the line height by 40% */
+    }
+
+.navigation a {
+    color: #298894;
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    opacity: 0.5;
+    padding: 20px;
+}
+
+.navigation img{
+    width: 23px;
+}
+
+@media screen and (max-width:710px) {
+    .navigation ul{
+        padding-inline-start: 5px;
+    }
+    .navigation a{
+        font-size: 0.7rem;
+        text-align: left;
+        padding: 5px;
+    }
+}
+
+/* BIOGRAPHY
+----------------------------------------------------------------*/
+
+.bio{
+    background-color: whitesmoke;
+    font-family: 'Noto Serif SC', serif;
+}
+
+.bio-float-left {
+    float: left;
+    margin-right: 20px; /* Adjust the margin as needed to control the space between the image and text */
+}
+
+.bio .navigation a{
+    color: black;
+}
+
+@media screen and (min-width:900px) {
+    .bio-display-maincontainer{
+        display: block;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 150px;
+        background-color: #A3A0A3;
+        min-height:400px;
+        overflow: auto;
+    }
+}
+@media screen and (max-width:899px) and (min-width:600px){
+    .bio-display-maincontainer{
+        display: block;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 75px;
+        background-color: #A3A0A3;
+        min-height:400px;
+        overflow: auto;
+    }
+}
+@media screen and (max-width:599px) and (min-width:300px){
+    .bio-display-maincontainer img{
+        width: 175px;
+    }
+
+    .bio-display-maincontainer p{
+        font-size: 0.7rem;
+    }
+
+    .bio-display-maincontainer{
+        display: block;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 30px;
+        background-color: #A3A0A3;
+        min-height:400px;
+        overflow: auto;
+    }
+}
+.bio-display-imagecontainer{
+    display: flex;
+    position: relative;
+}
+
+
+/* VIDEO
+----------------------------------------------------------------*/
+.video{
+    background-color: #2D1620;
+    color: #C39986;
+    font-family: 'Noto Serif SC', serif;
+}
+
+@media screen and (min-width:1400px) {
+    .video-blocks-header{
+        color: #e4c8ba;
+        width:100%;
+        z-index: 1;
+        max-width: 1360px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2rem;
+        font-family: 'Noto Serif SC', serif;
+    }
+}
+@media screen and (max-width:1399px) {
+    .video-blocks-header{
+        color: #e4c8ba;
+        width:100%;
+        z-index: 1;
+        max-width: 1360px;
+        width: 100%;
+        margin-left: 15px;
+        margin-right: auto;
+        font-size: 2rem;
+        font-family: 'Noto Serif SC', serif;
+    }
+}
+
+.video-grid{
+    margin-top: 0;
+    padding: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-grid:first-child{
+    margin: 1px;
+}
+
+@media screen and (min-width:1435px) {
+    .video-grid-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1360px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px 30px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:1434px) and (min-width:1065px){
+    .video-grid-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1360px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px 30px;
+        padding: 0;
+    }    
+}
+@media screen and (max-width:1064px) and (min-width:725px){
+    .video-grid-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1360px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px 30px;
+        padding: 0;
+    }    
+}
+@media screen and (max-width:724px){
+    .video-grid-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 1360px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px 30px;
+        padding: 0;
+    }    
+}
+.video-item-details{
+    font-family: 'Noto Serif SC', serif;
+}
+
+.video-item-details-inner{
+    height: 89px;
+}
+.video-item-prefix{
+    display: block;
+    margin-bottom: 3px;
+    font-size: 1rem;
+    font-family: 'Noto Serif SC', serif;
+}
+
+.video-item-title{
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+.video-item-date{
+    display:block;
+    font-family: 'Noto Serif SC', serif;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+
+/* WHAT'S ON
+----------------------------------------------------------------*/
+.page-content{
+    height: 78vh;
+    overflow: auto;
+}
+
+.content-blocks{
+    width:100%;
+    z-index: 1;
+}
+
+@media screen and (min-width:1400px) {
+    .content-blocks-header{
+        width:100%;
+        z-index: 1;
+        max-width: 1360px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2rem;
+        font-family: 'Noto Serif SC', serif;
+    }
+}
+@media screen and (max-width:1399px) {
+    .content-blocks-header{
+        width:100%;
+        z-index: 1;
+        max-width: 1360px;
+        width: 100%;
+        margin-left: 15px;
+        margin-right: auto;
+        font-size: 2rem;
+        font-family: 'Noto Serif SC', serif;
+    }
+}
+
+.event-grid{
+    margin-top: 0;
+    padding: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.event-grid:first-child{
+    margin: 1px;
+}
+
+@media screen and (min-width:1820px) {
+    .event-grid-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1360px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px 30px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:1819px) and (min-width:1090px) {
+    .event-grid-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1360px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px 30px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:1089px){
+    .event-grid-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 1360px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px 30px;
+        padding: 0;
+    }
+}
+
+.event-item-details{
+    font-family: 'Noto Serif SC', serif;
+}
+
+.event-item-prefix{
+    display: block;
+    margin-bottom: 3px;
+    font-size: 1rem;
+    font-family: 'Noto Serif SC', serif;
+}
+
+.event-item-title{
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+.event-item-date{
+    display:block;
+    font-family: 'Noto Serif SC', serif;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:555px) {
+    .event-grid-list img{
+        width: 300px;
+        height: 180px;
+    }
+    .content-blocks-header{
+        width:100%;
+        z-index: 1;
+        max-width: 1360px;
+        width: 100%;
+        margin-left: 15px;
+        margin-right: auto;
+        font-size: 1rem;
+        font-family: 'Noto Serif SC', serif;
+    }
+    .event-item-prefix{
+        display: block;
+        margin-bottom: 3px;
+        font-size: 0.5rem;
+        font-family: 'Noto Serif SC', serif;
+    }
+    
+    .event-item-title{
+        font-family: 'Noto Serif SC', serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 0;
+    }
+    
+    .event-item-date{
+        display:block;
+        font-family: 'Noto Serif SC', serif;
+        margin-top: 15px;
+        font-size: 0.5rem;
+    }
+}
+
+/* STORE
+----------------------------------------------------------------*/
+
+
+/* LESSONS
+----------------------------------------------------------------*/
+
+#map {
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height:auto;
+        /* position:absolute; */
+}
+
+#originalImage{
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height:auto;
+}
+
+.contact{
+    background-color: whitesmoke;
+    font-family: 'Noto Serif SC', serif;
+}
+
+.contact .navigation a{
+    color: black;
+}
+
+.content-display-maincontainer{
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 30px;
+    font-weight: 400;
+}
+
+.content-display-maincontainer h2{
+    font-weight: 400;
+}
+
+@media screen and (min-width:865px) {
+    .content-display-maincontainer h1{
+        font-size: 2rem;
+    }
+    .content-display-maincontainer h2{
+        font-size: 1.5rem;
+    }
+    .content-display-maincontainer p{
+        font-size:0.75rem;
+    }
+}
+
+@media screen and (max-width:864px) {
+    .content-display-maincontainer h1{
+        font-size: 1.5rem;
+
+    }
+    .content-display-maincontainer h2{
+        font-size: 1rem;
+    }
+    .content-display-maincontainer p{
+        font-size:0.75rem;
+    }
+}
+
+
+.content-display-imagecontainer{
+    display: flex;
+    position: relative;
+}
+
+.content-navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    width: 100%;
+}
+.content-buttonwrapper{
+    display: inline-flex; /* Display as a block-level element */
+    padding: 5px 2px; /* Add padding to the button */
+    font-size: 16px; /* Set the font size */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* Remove underline for links */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    color: black; /* Set text color */
+    background-color: #f1f4f2; /* Set background color */
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+    height: 20px;
+}
+
+.content-buttonwrapper p{
+    margin: 8px;
+}
+
+.content-buttoniconwrapper{
+    display: flex;
+    text-align: center; /* Center-align text */
+    padding: 5px 2px; /* Add padding to the button */
+}
+
+.address-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 75px;
+    font-size: 25px; /* Set the font size */
+}
+
+.line-break-container {
+    white-space: pre-line;
+}
+.content image{
+    z-index: 1001;
+}
+
+/* Style for the pop-up container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 2001;
+  }
+  
+/* Style for the pop-up content */
+.popup-content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 20px;
+text-align: center;
+}
+
+/* Style for the close button */
+.close {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 20px;
+cursor: pointer;
+}
+  
+
+/* FOOTER
+----------------------------------------------------------------*/
+footer{
+    background: #2D1620;
+    color: #05788C;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 0.8rem; /* 8px */
+    /* line-height: 1.4; /*increase the line height by 40% */
+    display: flex;
+    /* The footer items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is the same. The first item is flush with the main-start edge, and the last item is flush with the main-end edge */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    left: 0px;
+}
+
+footer a{
+    color: #05788C;
+}
+
+footer a:hover{
+    opacity: 0.5;
+}
+
+.socials{
+    /* remove the bullet from the list items considering teh creation of the inline-block */ 
+    list-style-type: none;
+    padding: 0;
+    margin-right: 30px;
+    }
+
+.socials li{
+    /* convert the list items into a inline block display*/ 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.socials img{
+    width: 20px;
+}
+
+.socials img:hover{
+    opacity: 0.5;
+}

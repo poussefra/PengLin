@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peng Lin | Chinese pianist | Royal College of Music | Juilliard | London </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="../Script/lessons-animation-image.js" defer></script>
+    <script src="./Script/commonheader.js"></script>
+    <script src="./Script/commonfooter.js"></script>
+  </head>
+  <body class="contact">
+    <div >
+      <!-- //  HEADER INFO // -->
+      <!-- //  imported from commonheader script -->
+
+      <main>     
+          <!-- End content edits here.-->
+            <div class="content-display-maincontainer">
+
+              <div>
+                <h1> Discover Your Musical Journey</h1>
+                <h2> Welcome to a place where musical aspirations come to life. Nestled in the heart of artistic education, Peng Lin tuitions stand out as a beacon of excellence, providing unparalleled guidance for individuals of all ages and goals.              
+                  Whether you're an aspiring artist in need of a seasoned coach, a dedicated student aiming for proficiency, or a young enthusiast taking the first steps into the world of music, it is the ideal destination. Regardless of your age or objective, let the magic of music unfold in your life. 
+                </h2>
+              </div>
+
+              <div class="content-display-imagecontainer" id="displaycontainer">
+                <div id="originalImage">
+                  <img src="../images/london-music-school.jpg" width=700 height=400 alt="London music school" id="originalImage" class="image">
+                </div>
+                <div id="map">
+                </div>
+              </div>
+
+              <div class="content-navigation-bar">
+
+                <nav class="content-buttonwrapper" id="buttongallery">
+                  <div class="content-buttoniconwrapper">
+                    <img src="../images/icon-gallery.png" height="30" srcset="" alt="gallery" width="30">
+                  </div>
+                  <p> Gallery </p>
+                </nav>
+
+                <nav class="content-buttonwrapper" id="buttonmap">
+                  <div class="content-buttoniconwrapper">
+                    <img src="../images/icon-map.png" height="30" srcset="" alt="map" width="30">
+                  </div>
+                  <p> Map </p>
+                </nav>
+
+                <nav class="content-buttonwrapper" id="buttoncontact">
+                  <div class="content-buttoniconwrapper">
+                    <img src="../images/icon-message.png" height="30" srcset="" alt="message" width="30">
+                  </div>
+                  <p> Contact </p>
+                </nav>
+              </div>  
+              
+              <div id="popup" class="popup">
+                <!-- Content of the pop-up -->
+                <div class="popup-content">
+                  <span class="close" onclick="closePopup()">&times;</span>
+                  <h2>Enquiry Form</h2>
+                  <p>This is the content of the pop-up.</p>
+                </div>
+              </div>
+
+            </div>
+      </main>
+    
+      <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+      <!-- //  imported from commonfooter script -->
+
+    </div>
+  </body>
+</html>
